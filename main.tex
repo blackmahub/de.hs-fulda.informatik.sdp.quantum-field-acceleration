@@ -1,0 +1,225 @@
+%% This is file `main.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+\documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% The graphicx package provides the includegraphics command.
+\usepackage{graphicx}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+\journal{Prof. Dr. Alexander Gepperth}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+\title{Acceleration of Quantum Field Theory calculations using Machine Learning packages}
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author{Rohan Deo, Mahbubur Rahman, Swetaketu Majumder}
+
+\address{Fulda University of Applied Sciences, Germany}
+
+\begin{abstract}
+%% Text of abstract
+The acceleration of quantum field theory calculations are complicated and time consuming if they are done in general problem solving way using procedural programming within computer and also it is unbelievable to do calculation correctly using paper and pencil. Moreover, at present time, machine learning packages are using to calculate complex scientific, statistical, financial and other complicated calculations. This report describes an approach to calculate the acceleration of quantum field theory with the help of machine learning packages and also demonstrate the calculated actions in 2D graphical plane.    
+\end{abstract}
+
+\begin{keyword}
+Science \sep Publication \sep Physics \sep Quantum Mechanics \sep Quantum Field Theory \sep Acceleration \sep Action \sep Lattice \sep Free Scalar Field \sep Convolution \sep Fast Fourier Transform FFT \sep Gradient Descent Optimizer \sep Machine Learning \sep TensorFlow \sep Complicated
+%% keywords here, in the form: keyword \sep keyword
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%%
+%% Start line numbering here if you want
+%%
+%% \linenumbers
+
+%% main text
+\section{Problem Description}
+\label{S:1}
+Quantum mechanics, including quantum field theory, is a fundamental theory in physics which describes nature at the smallest scales of energy levels of atoms and subatomic particles. Quantum field theory(QFT) is the theoretical framework for constructing quantum mechanical models of subatomic particles in particle physics and quasi-particles in condensed matter physics.
+
+Lattice quantum field theories are essentially quantum field theories which are not defined
+in continuum Minkowski time, but rather in a finite Euclidean volume on a discrete set
+of points, the lattice. 
+
+To define a lattice theory the path-integral formulation is the method of choice. Since
+defining the path integral itself is usually done using a lattice approximation, it is useful
+to consider this in more detail. Since the path integral formulation is as axiomatic as is canonical quantization, it cannot be deduced. However, it is possible to motivate it. A heuristic reasoning is the following. Take a quantum mechanical particle which moves in time $T$ from a point $a$ of origin to a point $b$ of measurement. This is not yet making any statement about the path the particle followed. In fact, in quantum mechanics, due to the superposition principle, a-priori no path is preferred. Therefore, the transition amplitude $U$ for this process must be expressible as
+\begin{equation}
+U(a, b, T) = \sum_{All\hspace{2pt}paths}e^{i\cdot Phase}
+\end{equation}
+which are weighted by a generic phase associated with the path. Since all paths are equal from the quantum mechanical point of view, this phase must be real. Thus it remains only to determine this phase. Based on the correspondence principle, in the classical limit the classical path must be most important. Thus, to reduce interference effect, the phase should be minimal for the classical path. A function which implements this is the classical action $S$, determined as
+\begin{equation}
+S[C] = \int dtL
+\end{equation}
+where the integral is over the given path $C$ from $a$ to $b$, and the action is therefore a functional of the path $S$ and the classical Lagrange function $L$. Of course, it is always possible to add a constant to the action without altering the result. Rewriting the sum as a functional integral over all paths, this yields already the definition of the functional integral
+\begin{equation}
+U(a, b, T) = \sum_{C}e^{iS[C]} \equiv \int DCe^{iS[C]}
+\end{equation}
+This defines the quantum mechanical path integral. For $\epsilon$ arbitrarily small the Baker-Campbell-Hausdorff formula
+\begin{equation}
+exp\hspace{1pt}F\hspace{2pt}exp\hspace{1pt}G = exp(F + G + \frac{1}{2}[F, G] + \frac{1}{12}([[F, G], G] + [F, [F, G]]) + \cdots)
+\end{equation}
+yields
+% \begin{equation}
+% e^{-iH\epsilon} \approx e^{\frac{-i\epsilon}{2}%P^{2}}
+% \end{equation}
+% i\cdot e\cdot for infinitesimally small time steps the exponentials can be separated.
+
+\section{Planning and Proposed Solutions}
+\label{S:2}
+
+\section{Implementation}
+\label{S:3}
+\subsection{Python}
+\subsection{TensorFlow}
+\subsection{Matplotlib}
+
+\section{Comparison among Solutions}
+\label{S:4}
+
+\section{Final Outcome}
+\label{S:5}
+
+\section{Challenges Faced during Implementation}
+\label{S:6}
+
+\section{Future Works}
+\label{S:7}
+
+\section{Code Snapshots}
+\label{S:8}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}          ==>>  [#]
+%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+%%   \citet{key}         ==>>  Author [#]
+
+%% References with bibTeX database:
+\section{References}
+\bibliographystyle{model1-num-names}
+\bibliography{sample.bib}
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `main.tex'.
